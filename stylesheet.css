@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.car{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.75)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.wheel{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wheel ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+    position: relative;
+}
+.wheel ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.wheel ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #d1660e;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.wheel ul li:hover::after{
+    width: 100%;
+}
+.seat{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    transform: translateY(0%);
+    text-align: center;
+    color: white;
+}
+.seat h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.seat p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.engine{
+    position: relative;
+}
+.engine a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.engine::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #d1660e;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.engine:hover::after{
+    width: 100%;
+}
+.oil{
+    max-width: 1200px;
+    
+    margin: auto;
+}
+.petrol{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.brake{
+    background-color: black;
+     padding: 70px 0;
+}
+.tank{
+    width: 25%;
+    padding: 0 15px;
+}
+.tank h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    position: relative;
+}
+.tank h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    background-color: rgb(114, 166, 175);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.tank ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.tank ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s ease;
+}
+.tank ul li a:hover{
+    color:#ffffff;
+    padding-left: 10px;
+}
+.tank .social-links{
+    display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.tank .social-links a:hover{
+    color: red;
+    background-color: white;
+}
